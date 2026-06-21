@@ -17,12 +17,26 @@ import {
 } from "lucide-react";
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroImg from "@/assets/hero-father.jpg";
-import mChild from "@/assets/memory-childhood.jpg";
-import mSchool from "@/assets/memory-school.jpg";
-import mAchieve from "@/assets/memory-achievement.jpg";
+import heroImg from "@/assets/hero-father.png";
+import logo from "@/assets/logo_father.png";
+import mChild from "@/assets/memory-childhood.jpeg";
+import mChild2 from "@/assets/memory-childhood2.jpeg";
+import mSchool from "@/assets/memory-school.jpeg";
+import mAchieve from "@/assets/memory-achievement.jpeg";
 import mDifficult from "@/assets/memory-difficult.jpg";
 import mToday from "@/assets/memory-today.jpg";
+import happy1 from "@/assets/happy1.jpeg";
+import happy2 from "@/assets/happy2.jpeg";
+import happy3 from "@/assets/happy3.jpeg";
+import happy4 from "@/assets/happy4.jpg";
+import happy5 from "@/assets/happy5.jpg";
+import happy6 from "@/assets/happy6.jpg";
+import happy7 from "@/assets/happy7.jpg";
+import happy8 from "@/assets/happy8.jpg";
+import happy9 from "@/assets/happy9.jpg";
+import happy10 from "@/assets/happy10.jpg";
+import happy11 from "@/assets/happy11.jpeg";
+import happy12 from "@/assets/happy12.jpeg";
 
 import { FloatingHearts, Starfield } from "@/components/Particles";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -30,13 +44,13 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "For My Father ❤️ — A Tribute to Naveen Kumar Sharma" },
+      { title: "For Our Father ❤️ — A Tribute to Naveen Kumar Sharma" },
       {
         name: "description",
         content:
           "An emotional Father's Day tribute to Naveen Kumar Sharma — letters, memories, and gratitude for the world's best father.",
       },
-      { property: "og:title", content: "For My Father ❤️" },
+      { property: "og:title", content: "For Our Father ❤️" },
       {
         property: "og:description",
         content: "A heartfelt Father's Day tribute to Naveen Kumar Sharma.",
@@ -44,6 +58,12 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "icon",
+        href: logo,
+      }
+    ]
   }),
   component: Home,
 });
@@ -108,10 +128,10 @@ const LETTER = `Thank you for every sacrifice you made silently,
 every lesson you taught patiently,
 and every moment you stood beside me.
 
-Your love became my confidence
-and your support became my strength.
+Your love became our confidence
+and your support became our strength.
 
-You are my first hero and my forever home, Papa.
+You are our first hero and our forever home, Papa.
 
 Happy Father's Day. ❤️`;
 
@@ -136,7 +156,7 @@ function Letter() {
       </p>
       <div className="mt-8 flex items-center justify-between">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[color:var(--gold)]/50 to-transparent" />
-        <span className="font-hand mx-4 text-2xl text-[color:var(--gold)]">— Your Child</span>
+        <span className="font-hand mx-4 text-2xl text-[color:var(--gold)]">— Your Children</span>
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[color:var(--gold)]/50 to-transparent" />
       </div>
     </div>
@@ -145,9 +165,10 @@ function Letter() {
 
 const TIMELINE = [
   { title: "Childhood", year: "The Beginning", img: mChild, text: "Carried me on your shoulders so I could see the world a little higher." },
-  { title: "School Days", year: "Learning to Ride", img: mSchool, text: "You let go of the bicycle — and I learned to trust myself." },
-  { title: "First Achievement", year: "My Proudest Day", img: mAchieve, text: "Your eyes that day told me everything I needed to know." },
-  { title: "Difficult Times", year: "When I Fell", img: mDifficult, text: "You sat with me in silence. That silence held everything together." },
+  { title: "Childhood", year: "The Beginning", img: mChild2, text: "Carried me on your shoulders so I could see the world a little higher." },
+  { title: "School Days", year: "Learning to Ride", img: mSchool, text: "You never let go of us — and We learned to trust myself." },
+  { title: "First Achievement", year: "My Family Day", img: mAchieve, text: "Your eyes that day told us everything We needed to know." },
+  { title: "Difficult Times", year: "Meditaion", img: mDifficult, text: "You sat with silence. That silence held everything together." },
   { title: "Today", year: "Side by Side", img: mToday, text: "Same laugh, same love — only the years between us have grown." },
 ];
 
@@ -228,7 +249,18 @@ const GALLERY = [
   { src: mAchieve, caption: "First trophy — your eyes shone brighter", span: "" },
   { src: mToday, caption: "Still laughing at your jokes", span: "row-span-2" },
   { src: mDifficult, caption: "When the world was loud, you were still", span: "" },
-  { src: heroImg, caption: "Walking toward every sunset together", span: "col-span-2" },
+  { src: happy1, caption: "The days that became our forever memories", span: "row-span-2" },
+  { src: happy2, caption: "Every smile carried a thousand moments", span: "row-span-2" },
+  { src: happy3, caption: "Growing up with your hand in mine", span: "row-span-2" },
+  { src: happy4, caption: "The little moments that meant everything", span: "row-span-2" },
+  { src: happy5, caption: "Laughing through every chapter together", span: "row-span-2" },
+  { src: happy6, caption: "Where happiness always felt like home", span: "row-span-2" },
+  { src: happy7, caption: "You made ordinary days unforgettable", span: "row-span-2" },
+  { src: happy8, caption: "Every journey felt easier beside you", span: "row-span-2" },
+  { src: happy9, caption: "Moments We will carry forever", span: "row-span-2" },
+  { src: happy10, caption: "A lifetime of love in a single frame", span: "row-span-2" },
+  { src: happy11, caption: "Still making memories, one smile at a time", span: "row-span-2" },
+  { src: happy12, caption: "Walking through life together, always", span: "row-span-2" },
 ];
 
 function Gallery() {
@@ -290,8 +322,8 @@ const QUALITIES = [
   { icon: Shield, title: "Protector", emoji: "🛡️", text: "Always the wall between me and the storm." },
   { icon: BookOpen, title: "Teacher", emoji: "📘", text: "Every lesson you taught still lives in me." },
   { icon: Heart, title: "Support System", emoji: "❤️", text: "The quiet certainty that someone has me." },
-  { icon: Star, title: "Best Friend", emoji: "🌟", text: "The one I want to call first, every single time." },
-  { icon: Rocket, title: "Inspiration", emoji: "🚀", text: "You dreamed for me before I knew how to dream." },
+  { icon: Star, title: "Best Friend", emoji: "🌟", text: "The one We want to call first, every single time." },
+  { icon: Rocket, title: "Inspiration", emoji: "🚀", text: "You dreamed for us before We knew how to dream." },
   { icon: Sparkles, title: "Superhero", emoji: "🦸", text: "No cape needed — just your steady hands." },
 ];
 
@@ -370,7 +402,7 @@ function SurpriseMessage() {
             >
               <Heart className="mx-auto text-[color:var(--gold)]" size={48} fill="currentColor" />
               <p className="font-display mt-6 text-2xl leading-relaxed text-[color:var(--foreground)] sm:text-3xl">
-                "No words can truly express what you mean to me. Happy Father's Day. Thank you for being my father."
+                "No words can truly express what you mean to Us. Happy Father's Day. Thank you for being our father."
               </p>
               <p className="font-hand mt-6 text-2xl text-[color:var(--gold)]">— For {FATHER}</p>
               <button
@@ -421,8 +453,12 @@ function Home() {
       {/* NAV */}
       <header className="fixed inset-x-0 top-0 z-40 mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a href="#top" className="font-display flex items-center gap-2 text-lg font-semibold">
-          <Heart size={18} className="text-[color:var(--gold)]" fill="currentColor" />
-          <span>For My Father</span>
+              <img
+                src={logo}
+                alt="For Our Father"
+                className="h-10 w-10 rounded-full object-cover border border-[color:var(--gold)]/40 shadow-lg transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] origin-top hover:translate-y-4 hover:scale-[6] hover:rotate-6 hover:shadow-[0_30px_60px_rgba(245,158,11,0.45)]"
+              />
+          <span>For Our Father</span>
         </a>
         <ThemeToggle />
       </header>
@@ -464,10 +500,10 @@ function Home() {
           </motion.h2>
           <h1 className="font-display mt-8 text-5xl font-bold leading-tight sm:text-7xl md:text-8xl">
             Happy Father's <br />
-            <span className="gradient-gold-text">Day ❤️</span>
+            <span className="gradient-gold-text inline-flex items-center gap-4">Day<img src={logo} alt="Father Logo" className=" inline-block align-middle h-20 w-20 rounded-full object-cover border border-[color:var(--gold)]/40 shadow-lg transition-all duration-700 hover:translate-y-4 hover:scale-[5] hover:rotate-6 hover:shadow-[0_30px_60px_rgba(245,158,11,0.45)] " /></span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/85 sm:text-xl">
-            To the man who taught me strength, kindness, and how to dream bigger.
+            To the man who taught us strength, kindness, and how to dream bigger.
           </p>
           <div className="mt-10 flex min-h-[60px] items-center justify-center">
             <Typewriter />
@@ -479,7 +515,7 @@ function Home() {
               style={{ background: "var(--gradient-gold)" }}
             >
               <span className="relative z-10 inline-flex items-center gap-2">
-                <Mail size={18} /> Read My Message
+                <Mail size={18} /> Read Our Message
               </span>
             </a>
             <a
@@ -502,7 +538,7 @@ function Home() {
 
       {/* LETTER */}
       <section id="letter" className="relative px-6 py-32">
-        <SectionHeader eyebrow="A handwritten note" title="A Letter, From My Heart" />
+        <SectionHeader eyebrow="A handwritten note" title="A Letter, From Our Heart" />
         <Letter />
       </section>
 
@@ -522,7 +558,7 @@ function Home() {
 
       {/* QUALITIES */}
       <section className="relative mx-auto max-w-7xl px-6 py-32">
-        <SectionHeader eyebrow="Everything you are" title={`What ${FATHER.split(" ")[0]} Means to Me`} />
+        <SectionHeader eyebrow="Everything you are" title={`What You Means to Us`} />
         <Qualities />
       </section>
 
@@ -572,7 +608,7 @@ function Home() {
 
       {/* FOOTER */}
       <footer className="relative border-t border-[color:var(--border)] px-6 py-12 text-center">
-        <Heart size={20} className="mx-auto text-[color:var(--gold)]" fill="currentColor" />
+        <img src={logo} alt="Father Logo" className=" inline-block align-middle h-20 w-20 rounded-full object-cover border border-[color:var(--gold)]/40 shadow-lg transition-all duration-700 hover:hover:scale-[3] hover:rotate-6 hover:shadow-[0_30px_60px_rgba(245,158,11,0.45)] " />
         <p className="font-display mt-3 text-lg">
           Made with love for the world's best father — <span className="gradient-gold-text font-semibold">{FATHER}</span> ❤️
         </p>

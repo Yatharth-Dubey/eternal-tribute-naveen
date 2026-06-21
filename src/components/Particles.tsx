@@ -1,6 +1,13 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+function useMounted() {
+  const [m, setM] = useState(false);
+  useEffect(() => setM(true), []);
+  return m;
+}
 
 export function FloatingHearts({ count = 18 }: { count?: number }) {
+  const mounted = useMounted();
   const items = useMemo(
     () =>
       Array.from({ length: count }).map((_, i) => ({
@@ -14,6 +21,7 @@ export function FloatingHearts({ count = 18 }: { count?: number }) {
       })),
     [count],
   );
+  if (!mounted) return null;
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       {items.map((p) => (
@@ -37,6 +45,7 @@ export function FloatingHearts({ count = 18 }: { count?: number }) {
 }
 
 export function Starfield({ count = 60 }: { count?: number }) {
+  const mounted = useMounted();
   const stars = useMemo(
     () =>
       Array.from({ length: count }).map((_, i) => ({
@@ -49,6 +58,7 @@ export function Starfield({ count = 60 }: { count?: number }) {
       })),
     [count],
   );
+  if (!mounted) return null;
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
       {stars.map((s) => (

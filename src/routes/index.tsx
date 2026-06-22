@@ -37,6 +37,7 @@ import happy9 from "@/assets/happy9.jpg";
 import happy10 from "@/assets/happy10.jpg";
 import happy11 from "@/assets/happy11.jpeg";
 import happy12 from "@/assets/happy12.jpeg";
+import happy13 from "@/assets/happy13.jpeg";
 
 import { FloatingHearts, Starfield } from "@/components/Particles";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -261,6 +262,7 @@ const GALLERY = [
   { src: happy10, caption: "A lifetime of love in a single frame", span: "row-span-2" },
   { src: happy11, caption: "Still making memories, one smile at a time", span: "row-span-2" },
   { src: happy12, caption: "Walking through life together, always", span: "row-span-2" },
+  { src: happy13, caption: "Walking through life together, always", span: "row-span-2" },
 ];
 
 function Gallery() {
